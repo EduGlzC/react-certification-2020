@@ -1,0 +1,65 @@
+ PASS  src/components/HomeHello/index.test.jsx
+  ✓ Greeting in Home Page (44 ms)
+
+-----------------------------|---------|----------|---------|---------|-------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------------|---------|----------|---------|---------|-------------------
+All files                    |   10.47 |    66.67 |    6.06 |   10.47 |                   
+ src                         |       0 |      100 |     100 |       0 |                   
+  index.jsx                  |       0 |      100 |     100 |       0 | 7                 
+ src/components/App          |       0 |      100 |       0 |       0 |                   
+  App.component.jsx          |       0 |      100 |       0 |       0 | 10                
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/components/Fortune      |       0 |      100 |       0 |       0 |                   
+  Fortune.component.jsx      |       0 |      100 |       0 |       0 | 7-9               
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/components/Header       |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 7-18              
+ src/components/HeaderLogin  |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 3-4               
+ src/components/HeaderNav    |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 3-4               
+ src/components/HeaderSearch |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 3-4               
+ src/components/HeaderToggle |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 3-4               
+ src/components/HomeHello    |     100 |      100 |     100 |     100 |                   
+  index.jsx                  |     100 |      100 |     100 |     100 |                   
+ src/components/Layout       |       0 |      100 |       0 |       0 |                   
+  Layout.component.jsx       |       0 |      100 |       0 |       0 | 4                 
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/components/Private      |       0 |        0 |       0 |       0 |                   
+  Private.component.jsx      |       0 |        0 |       0 |       0 | 7-10              
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/components/VideoCard    |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 3-4               
+ src/components/VideosHome   |       0 |      100 |       0 |       0 |                   
+  index.jsx                  |       0 |      100 |       0 |       0 | 4-13              
+ src/pages/Home              |       0 |      100 |       0 |       0 |                   
+  Home.page.jsx              |       0 |      100 |       0 |       0 | 20-24             
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/pages/Login             |       0 |      100 |       0 |       0 |                   
+  Login.page.jsx             |       0 |      100 |       0 |       0 | 8-17              
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/pages/NotFound          |       0 |      100 |       0 |       0 |                   
+  NotFound.page.jsx          |       0 |      100 |       0 |       0 | 7                 
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/pages/Secret            |       0 |      100 |       0 |       0 |                   
+  Secret.page.jsx            |       0 |      100 |       0 |       0 | 5                 
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/providers/Auth          |       0 |        0 |       0 |       0 |                   
+  Auth.provider.jsx          |       0 |        0 |       0 |       0 | 6-36              
+  index.js                   |       0 |        0 |       0 |       0 |                   
+ src/utils                   |       0 |      100 |       0 |       0 |                   
+  constants.js               |       0 |      100 |     100 |       0 | 1                 
+  fns.js                     |       0 |      100 |       0 |       0 | 2                 
+  storage.js                 |       0 |      100 |       0 |       0 | 1-13              
+ src/utils/hooks             |       0 |      100 |       0 |       0 |                   
+  useFortune.js              |       0 |      100 |       0 |       0 | 5-28              
+-----------------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        6.657 s
+Ran all test suites.
+
