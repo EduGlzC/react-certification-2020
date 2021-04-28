@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import HomePage from '../../pages/Home';
 import NotFound from '../../pages/NotFound';
 import Layout from '../Layout';
 import Header from '../Header';
+import VideoPage from '../../pages/Video/Video.page';
 
 function App() {
+  const [value, setValue] = useState('');
+
+  const onchange = (data) => {
+    setValue(data);
+  };
+
   return (
     <BrowserRouter>
-      <Header />
+      <Header
+        onchange={(e) => {
+          onchange(e);
+        }}
+      />
       <Layout>
         <Switch>
           <Route exact path="/">
-            <HomePage />
+            <HomePage txtSearch={value} />
+          </Route>
+          <Route path="/v/:idVideo">
+            <VideoPage />
           </Route>
           <Route path="*">
             <NotFound />
