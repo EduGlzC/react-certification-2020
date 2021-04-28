@@ -1,10 +1,11 @@
 import React from 'react';
+import './index.styles.css';
 
 const VideoDetail = ({ id, title, description, published, channel }) => (
   <div className="rounded overflow-hidden shadow-lg">
     <div className="p-2">
       <iframe
-        className="w-full h-full"
+        className="w-full h-80"
         allowFullScreen
         frameBorder="0"
         title="{title}"
