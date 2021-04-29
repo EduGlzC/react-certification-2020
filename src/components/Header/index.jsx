@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderLogin from '../HeaderLogin';
 import HeaderToggle from '../HeaderToggle';
 import HeaderSearch from '../HeaderSearch';
@@ -15,13 +15,28 @@ const getRandomPlaceHolder = () => {
   return msgPlaceholder[indexForText];
 };
 
-const Header = () => (
-  <header className="flex flex-row bg-red-600 w-full justify-between p-2">
-    <HeaderNav icon="nav-icon.png" message="Click to open menu" />
-    <HeaderSearch textPlaceholder={getRandomPlaceHolder()} />
-    <HeaderToggle />
-    <HeaderLogin photo="login-icon.png" message="Click to login" />
-  </header>
-);
+function Header(props) {
+  const [value, setValue] = useState('');
+
+  const onchange = (data) => {
+    setValue(data);
+    props.onchange(data);
+  };
+
+  return (
+    <header className="flex flex-row bg-red-600 w-full justify-between p-2">
+      <HeaderNav icon="/nav-icon.png" message="Click to open menu" />
+      <HeaderSearch
+        data={value}
+        onchange={(e) => {
+          onchange(e);
+        }}
+        textPlaceholder={getRandomPlaceHolder()}
+      />
+      <HeaderToggle />
+      <HeaderLogin photo="/login-icon.png" message="Click to login" />
+    </header>
+  );
+}
 
 export default Header;

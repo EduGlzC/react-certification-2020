@@ -13,7 +13,7 @@ function greeting(h) {
 }
 
 const Hello = ({ hour }) => (
-  <h1 className="text-center">Howdy, {greeting({ hour })} Wizeliner!</h1>
+  <h2 className="text-center">Howdy, {greeting({ hour })} Wizeliner!</h2>
 );
 
 export default Hello;
