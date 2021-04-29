@@ -6,10 +6,10 @@ const VideoCard = ({ id, urlImage, title, description, publishedDate, channel })
     <div id={id} className="max-w-sm rounded overflow-hidden shadow-lg">
       <img src={urlImage} alt="" className="w-full" />
       <div>
-        <div className="font-bold text-black text-left font-sans px-2 mb-2 h-10">
+        <div className="font-bold text-black text-left font-sans px-2 mb-2 h-16 leading-tight">
           {title}
         </div>
-        <div className="text-sm text-left font-sans h-20 px-2">{description}</div>
+        <div className="text-sm text-left font-sans h-24 px-2">{description}</div>
         <div className="flex justify-between bg-gray-400">
           <div className="flex-shrink md:flex-shrink-0 text-xs self-start p-1">
             {publishedDate}

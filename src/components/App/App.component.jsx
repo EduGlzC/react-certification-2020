@@ -12,6 +12,7 @@ function App() {
 
   const onchange = (data) => {
     setValue(data);
+    console.log('data=', data);
   };
 
   return (

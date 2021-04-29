@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.styles.css';
 
 const VideoDetail = ({ id, title, description, published, channel }) => (
   <div className="rounded overflow-hidden shadow-lg">
