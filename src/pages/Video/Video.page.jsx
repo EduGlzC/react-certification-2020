@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import VideoDetail from '../../components/VideoDetails';
 import VideosRelatives from '../../components/VideosRelatives';
 import Truncate from '../../utils/truncateString';
 import FormatPubDate from '../../utils/formatPublishedDate';
+import Theme from '../../providers/Theme/Theme';
+import { ThemeContext } from '../../providers/Theme/Theme.provider';
 
 function VideoPage() {
   const [dataVideo, setDataVideo] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { idVideo } = useParams();
   const [idVideoPlayer, setIdVideoPlayer] = useState(idVideo);
+  const { mode } = useContext(ThemeContext);
 
   useEffect(() => {
     fetch(
@@ -28,7 +31,7 @@ function VideoPage() {
   // https://www.googleapis.com/youtube/v3/videos?id=Hm3wVzcHjnE&key=AIzaSyAe7ucFPzRVCuXh8wh8UzGX_onfJFvkzMQ&part=snippet
 
   return (
-    <section>
+    <section className={`text-center ${Theme[mode].Layout.background} `}>
       <Link to="/"> ← Back</Link>
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1>

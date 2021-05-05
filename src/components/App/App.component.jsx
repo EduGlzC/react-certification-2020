@@ -9,7 +9,6 @@ import VideoPage from '../../pages/Video/Video.page';
 
 function App() {
   const [value, setValue] = useState('');
-
   const onchange = (data) => {
     setValue(data);
     console.log('data=', data);

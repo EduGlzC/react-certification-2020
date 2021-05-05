@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import HeaderLogin from '../HeaderLogin';
 import HeaderToggle from '../HeaderToggle';
 import HeaderSearch from '../HeaderSearch';
 import HeaderNav from '../HeaderNav';
+import Theme from '../../providers/Theme/Theme';
+import { ThemeContext } from '../../providers/Theme/Theme.provider';
 
 const msgPlaceholder = [
   'What can we help you find?',
@@ -17,6 +19,7 @@ const getRandomPlaceHolder = () => {
 
 function Header(props) {
   const [value, setValue] = useState('');
+  const { mode } = useContext(ThemeContext);
 
   const onchange = (data) => {
     setValue(data);
@@ -24,7 +27,9 @@ function Header(props) {
   };
 
   return (
-    <header className="flex flex-row bg-red-600 w-full justify-between p-2">
+    <header
+      className={`flex flex-row w-full justify-between p-2 ${Theme[mode].TopBar.background} `}
+    >
       <HeaderNav icon="/nav-icon.png" message="Click to open menu" />
       <HeaderSearch
         data={value}
